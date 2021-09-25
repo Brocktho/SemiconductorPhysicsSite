@@ -26,6 +26,7 @@ function App() {
   const [Chapter2, setChapter2] = useState(false);
   const chapter2Options = [
     {path:"Chapter2_1", name:"2.1 Principles of Quantum Mechanics"},
+    {path:"Chaapter2_2", name:"2.2 Schrodinger's equation"}
   ];
 
   const [Chapter3, setChapter3] = useState(false);
