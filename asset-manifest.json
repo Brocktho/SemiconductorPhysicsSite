@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SemiconductorPhysicsSite/static/css/main.8063ad2c.chunk.css",
+    "main.js": "/SemiconductorPhysicsSite/static/js/main.3889a031.chunk.js",
+    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.3889a031.chunk.js.map",
+    "runtime-main.js": "/SemiconductorPhysicsSite/static/js/runtime-main.eb058ce3.js",
+    "runtime-main.js.map": "/SemiconductorPhysicsSite/static/js/runtime-main.eb058ce3.js.map",
+    "static/js/2.26ac0a2f.chunk.js": "/SemiconductorPhysicsSite/static/js/2.26ac0a2f.chunk.js",
+    "static/js/2.26ac0a2f.chunk.js.map": "/SemiconductorPhysicsSite/static/js/2.26ac0a2f.chunk.js.map",
+    "static/js/3.5c319d50.chunk.js": "/SemiconductorPhysicsSite/static/js/3.5c319d50.chunk.js",
+    "static/js/3.5c319d50.chunk.js.map": "/SemiconductorPhysicsSite/static/js/3.5c319d50.chunk.js.map",
+    "index.html": "/SemiconductorPhysicsSite/index.html",
+    "static/css/main.8063ad2c.chunk.css.map": "/SemiconductorPhysicsSite/static/css/main.8063ad2c.chunk.css.map",
+    "static/js/2.26ac0a2f.chunk.js.LICENSE.txt": "/SemiconductorPhysicsSite/static/js/2.26ac0a2f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb058ce3.js",
+    "static/js/2.26ac0a2f.chunk.js",
+    "static/css/main.8063ad2c.chunk.css",
+    "static/js/main.3889a031.chunk.js"
+  ]
+}
