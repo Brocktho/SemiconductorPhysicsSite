@@ -16,7 +16,7 @@ function ChapterOneOne({imgPath}) {
                     <li>Silicon is by far the most common material as it’s widely available</li>
                     <li>Gallium Arsenide is one of the most common binary materials because of its optical properties and high speed applications</li>
                 </ul>
-                <img className="h-1/2 w-1/4" src={GalliumArsenide} alt="Gallium Arsenide's crystal Structure (Diamond)"/>
+                <img className="h-1/2 w-1/4" src={GalliumArsenide} alt="Gallium Arsenide's crystal Structure (Zincblende)"/>
             </div>
         </div>
     )
