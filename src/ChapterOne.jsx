@@ -26,7 +26,7 @@ function ChapterOne() {
         {id:"atomRad", name:"Atomic Radius"},
         {id:"atomDis", name:"Atomic Distance"}
     ];
-    
+
     
 
     const traceSimplePoints = {
@@ -140,7 +140,7 @@ function ChapterOne() {
                     </div>
                 }
             </div>
-            <Plot className="flex w-3/5 h-3/5" data = {data} layout = {layout} useResizeHandler/>
+            <Plot className="flex w-3/5 h-3/5 rounded-3xl" data = {data} layout = {layout} useResizeHandler/>
             
         </div>
     </div>
