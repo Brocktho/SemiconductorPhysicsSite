@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/SemiconductorPhysicsSite/static/css/main.926c507c.chunk.css",
-    "main.js": "/SemiconductorPhysicsSite/static/js/main.47d792e3.chunk.js",
-    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.47d792e3.chunk.js.map",
+    "main.css": "/SemiconductorPhysicsSite/static/css/main.ac9c3cf0.chunk.css",
+    "main.js": "/SemiconductorPhysicsSite/static/js/main.d3ed5ba9.chunk.js",
+    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.d3ed5ba9.chunk.js.map",
     "runtime-main.js": "/SemiconductorPhysicsSite/static/js/runtime-main.19017693.js",
     "runtime-main.js.map": "/SemiconductorPhysicsSite/static/js/runtime-main.19017693.js.map",
     "static/js/2.79bd4a56.chunk.js": "/SemiconductorPhysicsSite/static/js/2.79bd4a56.chunk.js",
@@ -10,14 +10,16 @@
     "static/js/3.e002289b.chunk.js": "/SemiconductorPhysicsSite/static/js/3.e002289b.chunk.js",
     "static/js/3.e002289b.chunk.js.map": "/SemiconductorPhysicsSite/static/js/3.e002289b.chunk.js.map",
     "index.html": "/SemiconductorPhysicsSite/index.html",
-    "static/css/main.926c507c.chunk.css.map": "/SemiconductorPhysicsSite/static/css/main.926c507c.chunk.css.map",
+    "static/css/main.ac9c3cf0.chunk.css.map": "/SemiconductorPhysicsSite/static/css/main.ac9c3cf0.chunk.css.map",
     "static/js/2.79bd4a56.chunk.js.LICENSE.txt": "/SemiconductorPhysicsSite/static/js/2.79bd4a56.chunk.js.LICENSE.txt",
-    "static/media/GalliumArsenideDark.61f2c1bf.png": "/SemiconductorPhysicsSite/static/media/GalliumArsenideDark.61f2c1bf.png"
+    "static/media/GalliumArsenideDark.61f2c1bf.png": "/SemiconductorPhysicsSite/static/media/GalliumArsenideDark.61f2c1bf.png",
+    "static/media/NeamanConstants1.2618fdd9.png": "/SemiconductorPhysicsSite/static/media/NeamanConstants1.2618fdd9.png",
+    "static/media/NeamanConstants2.1c44c6ef.png": "/SemiconductorPhysicsSite/static/media/NeamanConstants2.1c44c6ef.png"
   },
   "entrypoints": [
     "static/js/runtime-main.19017693.js",
     "static/js/2.79bd4a56.chunk.js",
-    "static/css/main.926c507c.chunk.css",
-    "static/js/main.47d792e3.chunk.js"
+    "static/css/main.ac9c3cf0.chunk.css",
+    "static/js/main.d3ed5ba9.chunk.js"
   ]
 }
