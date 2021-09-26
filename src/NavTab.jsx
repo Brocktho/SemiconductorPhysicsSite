@@ -33,7 +33,7 @@ function NavTab({key, id, link, toggle, set, pages=[]}) {
         <Link key={key} id={id} className="NavTab" to={"/SemiconductorPhysicsSite/" + link} onMouseEnter={() => entered()} onMouseLeave={() => exited()}>
             {link}
             {toggle &&
-            <ul className="pt-2 pb-2 flex flex-col absolute top-16 left-10 lg:left-30 items-center w-3/5 lg:w-64 bg-gray-600 dark:bg-gray-200 rounded-3xl">
+            <ul className="pt-2 pb-2 flex flex-col absolute top-16 left-1/2 transform -translate-x-1/2 items-center w-3/5 lg:w-64 bg-gray-600 dark:bg-gray-200 rounded-3xl">
                 {options}
             </ul>}  
         </Link>
