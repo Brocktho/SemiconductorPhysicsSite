@@ -111,7 +111,8 @@ function ChapterOne() {
         setStruct(value);
         }
         else{
-            setStruct(value);
+            setStruct(value)
+            setData([]);
         }
     }
     function changeProblem(value){
