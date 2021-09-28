@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/SemiconductorPhysicsSite/static/css/main.12af4cd4.chunk.css",
-    "main.js": "/SemiconductorPhysicsSite/static/js/main.21da438f.chunk.js",
-    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.21da438f.chunk.js.map",
-    "runtime-main.js": "/SemiconductorPhysicsSite/static/js/runtime-main.19017693.js",
-    "runtime-main.js.map": "/SemiconductorPhysicsSite/static/js/runtime-main.19017693.js.map",
-    "static/js/2.79bd4a56.chunk.js": "/SemiconductorPhysicsSite/static/js/2.79bd4a56.chunk.js",
-    "static/js/2.79bd4a56.chunk.js.map": "/SemiconductorPhysicsSite/static/js/2.79bd4a56.chunk.js.map",
-    "static/js/3.e002289b.chunk.js": "/SemiconductorPhysicsSite/static/js/3.e002289b.chunk.js",
-    "static/js/3.e002289b.chunk.js.map": "/SemiconductorPhysicsSite/static/js/3.e002289b.chunk.js.map",
+    "main.css": "/SemiconductorPhysicsSite/static/css/main.f8e1b1a3.chunk.css",
+    "main.js": "/SemiconductorPhysicsSite/static/js/main.4d1fecba.chunk.js",
+    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.4d1fecba.chunk.js.map",
+    "runtime-main.js": "/SemiconductorPhysicsSite/static/js/runtime-main.c41988d1.js",
+    "runtime-main.js.map": "/SemiconductorPhysicsSite/static/js/runtime-main.c41988d1.js.map",
+    "static/js/2.5da9d40d.chunk.js": "/SemiconductorPhysicsSite/static/js/2.5da9d40d.chunk.js",
+    "static/js/2.5da9d40d.chunk.js.map": "/SemiconductorPhysicsSite/static/js/2.5da9d40d.chunk.js.map",
+    "static/js/3.99ea7b65.chunk.js": "/SemiconductorPhysicsSite/static/js/3.99ea7b65.chunk.js",
+    "static/js/3.99ea7b65.chunk.js.map": "/SemiconductorPhysicsSite/static/js/3.99ea7b65.chunk.js.map",
     "index.html": "/SemiconductorPhysicsSite/index.html",
-    "static/css/main.12af4cd4.chunk.css.map": "/SemiconductorPhysicsSite/static/css/main.12af4cd4.chunk.css.map",
-    "static/js/2.79bd4a56.chunk.js.LICENSE.txt": "/SemiconductorPhysicsSite/static/js/2.79bd4a56.chunk.js.LICENSE.txt",
-    "static/media/GalliumArsenideDark.61f2c1bf.png": "/SemiconductorPhysicsSite/static/media/GalliumArsenideDark.61f2c1bf.png",
+    "static/css/main.f8e1b1a3.chunk.css.map": "/SemiconductorPhysicsSite/static/css/main.f8e1b1a3.chunk.css.map",
+    "static/js/2.5da9d40d.chunk.js.LICENSE.txt": "/SemiconductorPhysicsSite/static/js/2.5da9d40d.chunk.js.LICENSE.txt",
     "static/media/NeamanConstants1.2618fdd9.png": "/SemiconductorPhysicsSite/static/media/NeamanConstants1.2618fdd9.png",
     "static/media/NeamanConstants2.1c44c6ef.png": "/SemiconductorPhysicsSite/static/media/NeamanConstants2.1c44c6ef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.19017693.js",
-    "static/js/2.79bd4a56.chunk.js",
-    "static/css/main.12af4cd4.chunk.css",
-    "static/js/main.21da438f.chunk.js"
+    "static/js/runtime-main.c41988d1.js",
+    "static/js/2.5da9d40d.chunk.js",
+    "static/css/main.f8e1b1a3.chunk.css",
+    "static/js/main.4d1fecba.chunk.js"
   ]
 }
