@@ -1,0 +1,7 @@
+{
+    "app_id": "semiconductorphysicssite-azgub",
+    "config_version": 20210101,
+    "name": "SemiconductorPhysicsSite",
+    "location": "US-VA",
+    "deployment_model": "GLOBAL"
+}
