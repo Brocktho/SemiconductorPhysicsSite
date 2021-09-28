@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       setSiteLoading(true);
-      const response = await fetch("http://Brocktho.github.io/SemiconductorPhysicsSite/API/ChapterData");
+      const response = await fetch("https://semiconductor-physics-backend.herokuapp.com/API/ChapterData");
 
       const responseData = await response.json();
       setLoadedData(responseData.subChapters);
