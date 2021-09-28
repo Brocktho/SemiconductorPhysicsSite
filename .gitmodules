@@ -1,0 +1,3 @@
+[submodule "SemiconductorPhysicsBackend"]
+	path = SemiconductorPhysicsBackend
+	url = https://github.com/Brocktho/SemiconductorPhysicsBackend.git
