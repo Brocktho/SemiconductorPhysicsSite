@@ -73,7 +73,7 @@ function App() {
     <Router>
       {siteLoading && 
       <Switch>
-        <Route path="/*">
+        <Route path="/">
           <div className="main">
             <h1 className="text-4xl dark:text-white">
               PLEASE WAIT, SITE LOADING!
