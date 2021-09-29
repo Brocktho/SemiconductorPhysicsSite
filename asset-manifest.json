@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SemiconductorPhysicsSite/static/css/main.f0570486.chunk.css",
-    "main.js": "/SemiconductorPhysicsSite/static/js/main.648cc0ad.chunk.js",
-    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.648cc0ad.chunk.js.map",
+    "main.js": "/SemiconductorPhysicsSite/static/js/main.0878e44b.chunk.js",
+    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.0878e44b.chunk.js.map",
     "runtime-main.js": "/SemiconductorPhysicsSite/static/js/runtime-main.c41988d1.js",
     "runtime-main.js.map": "/SemiconductorPhysicsSite/static/js/runtime-main.c41988d1.js.map",
     "static/js/2.849d0fbb.chunk.js": "/SemiconductorPhysicsSite/static/js/2.849d0fbb.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.c41988d1.js",
     "static/js/2.849d0fbb.chunk.js",
     "static/css/main.f0570486.chunk.css",
-    "static/js/main.648cc0ad.chunk.js"
+    "static/js/main.0878e44b.chunk.js"
   ]
 }
