@@ -13,8 +13,8 @@ function ChapterZero() {
         (All images are from Semiconductor Physics and Devices Basic Principles
         Fourth Edition by Donald A. Neaman)
       </h2>
-      <img className="w-2/5 h-full " src={NeamanConstants1}></img>
-      <img className="w-2/5 h-full" src={NeamanConstants2}></img>
+      <img className="w-2/5 h-full " src={NeamanConstants1} alt="useful constants from Neaman"></img>
+      <img className="w-2/5 h-full" src={NeamanConstants2} alt="useful constants from Neaman"></img>
     </div>
   );
 }

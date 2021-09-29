@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function SubChapter({data}) {
+function SubChapter({data={"title": null, "noteData": [], "picData": []}}) {
   const SubNotes = data.noteData.length > 0 &&
     data.noteData.map((item, i) => {
       return (

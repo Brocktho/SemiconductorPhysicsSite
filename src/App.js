@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import SubChapter from "./Components/SubChapter";
+import ChapterOneP from "./Components/ChapterOneP";
 import ChapterTwo from "./Components/ChapterTwo";
 import ChapterThree from "./Components/ChapterThree";
 import ChapterZero from "./Components/ChapterZero";
 import NavBar from "./Components/NavBar";
+import ErrorPage from "./Components/ErrorPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -13,7 +15,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       setSiteLoading(true);
-      const response = await fetch("https://semiconductor-physics-backend.herokuapp.com/API/ChapterData");
+      const response = await fetch(
+        "https://semiconductor-physics-backend.herokuapp.com/API/ChapterData"
+      );
 
       const responseData = await response.json();
       setLoadedData(responseData.subChapters);
@@ -45,7 +49,7 @@ function App() {
       name: "Chapter1",
       toggle: Chapter1,
       set: setChapter1,
-      options: loadedData,
+      options: loadedData
     },
     {
       name: "Chapter2",
@@ -67,31 +71,56 @@ function App() {
 
   return (
     <Router>
-      <div
-        className="h-screen w-full flex flex-col items-center space-y-16 bg-blue-500 dark:bg-blue-900"
-        onClick={() => close()}
-      >
-        <NavBar chapters={chapters} />
-        <Switch>
-          <Route path="/SemiconductorPhysicsSite/:subChapter" render={({match}) => {
-            const subChapter = match.params.subChapter
-            const foundSubChapter = loadedData.find(sub => sub.path === subChapter)
-            return <SubChapter data={foundSubChapter}/>
-          }}/>
-          <Route path="/SemiconductorPhysicsSite/Chapter1">
-            <div></div>
-          </Route>
-          <Route path="/SemiconductorPhysicsSite/Chapter2">
-            <ChapterTwo />
-          </Route>
-          <Route path="/SemiconductorPhysicsSite/Chapter3">
-            <ChapterThree />
-          </Route>
-          <Route path="/SemiconductorPhysicsSite/">
-            <ChapterZero />
-          </Route>
-        </Switch>
+      {siteLoading && 
+      <div className="main">
+        <h1 className="text-4xl dark:text-white">
+          PLEASE WAIT, SITE LOADING!
+        </h1>
       </div>
+      }
+      {!siteLoading && (
+        <div
+          className="main"
+          onClick={() => close()}
+        >
+          <NavBar chapters={chapters} />
+
+          <Switch>
+            <Route path="/SemiconductorPhysicsSite/Chapter1">
+              <ChapterOneP />
+            </Route>
+            <Route path="/SemiconductorPhysicsSite/Chapter2">
+              <ChapterTwo />
+            </Route>
+            <Route path="/SemiconductorPhysicsSite/Chapter3">
+              <ChapterThree />
+            </Route>
+            <Route
+              exact
+              path="/SemiconductorPhysicsSite/:subChapter"
+              render={({ match }) => {
+                const subChapter = match.params.subChapter;
+                const foundSubChapter = loadedData.find(
+                  (sub) => sub.path === subChapter
+                );
+                if (foundSubChapter !== undefined) {
+                  return (
+                    <SubChapter
+                      key={foundSubChapter.key}
+                      data={foundSubChapter}
+                    />
+                  );
+                } else {
+                  return <ErrorPage />;
+                }
+              }}
+            />
+            <Route path="/">
+              <ChapterZero />
+            </Route>
+          </Switch>
+        </div>
+      )}
     </Router>
   );
 }

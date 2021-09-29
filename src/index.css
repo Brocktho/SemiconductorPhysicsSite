@@ -17,4 +17,7 @@
   .ChapterNotes {
     @apply flex flex-col h-full font-bold text-gray-800 dark:text-gray-200 w-1/4 list-disc space-y-4;
   }
+  .main{
+    @apply h-screen w-full flex flex-col items-center space-y-16 bg-blue-500 dark:bg-blue-900
+  }
 }
