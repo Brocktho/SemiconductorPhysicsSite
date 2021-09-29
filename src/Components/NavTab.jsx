@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-function NavTab({ key, id, link, toggle, set, pages = [] }) {
+function NavTab({ key, id, link, toggle, close, set, pages = [] }) {
   const options =
     pages.length > 0 &&
     pages.map((item, i) => {
@@ -12,7 +12,7 @@ function NavTab({ key, id, link, toggle, set, pages = [] }) {
         <Link
           key={item.key}
           id={item.key}
-          to={"/SemiconductorPhysicsSite/" + item.path}
+          to={"/" + item.path}
           className={
             "w-11/12 text-xs font-bold border-black h-6 pt-1 items-center text-center active:underline" +
             finalClass
@@ -30,7 +30,7 @@ function NavTab({ key, id, link, toggle, set, pages = [] }) {
   }
 
   function entered() {
-    return set(true), clearTimeout(timer);
+    return close(), set(true), clearTimeout(timer);
   }
 
   return (
@@ -38,7 +38,7 @@ function NavTab({ key, id, link, toggle, set, pages = [] }) {
       key={key}
       id={id}
       className="NavTab"
-      to={"/SemiconductorPhysicsSite/" + link}
+      to={"/" + link}
       onMouseEnter={() => entered()}
       onMouseLeave={() => exited()}
     >

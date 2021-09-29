@@ -87,21 +87,21 @@ function App() {
           className="main"
           onClick={() => close()}
         >
-          <NavBar chapters={chapters} />
+          <NavBar chapters={chapters} close={close} />
 
           <Switch>
-            <Route path="/SemiconductorPhysicsSite/Chapter1">
+            <Route path="/Chapter1">
               <ChapterOneP />
             </Route>
-            <Route path="/SemiconductorPhysicsSite/Chapter2">
+            <Route path="/Chapter2">
               <ChapterTwo />
             </Route>
-            <Route path="/SemiconductorPhysicsSite/Chapter3">
+            <Route path="/Chapter3">
               <ChapterThree />
             </Route>
             <Route
               exact
-              path="/SemiconductorPhysicsSite/:subChapter"
+              path="/:subChapter"
               render={({ match }) => {
                 const subChapter = match.params.subChapter;
                 const foundSubChapter = loadedData.find(

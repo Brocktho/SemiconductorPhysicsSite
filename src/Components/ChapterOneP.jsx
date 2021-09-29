@@ -37,7 +37,7 @@ function ChapterOneP() {
     marker: {
       size: 4,
       line: {
-        color: "rgba(200, 20, 20, 0.5)",
+        color: "rgb(200, 20, 20)",
         width: 0.5,
       },
       opactiy: 0.8,
@@ -52,7 +52,7 @@ function ChapterOneP() {
     name: "sides",
     line: {
       size: 4,
-      color: "rgba(0, 0, 0, 0.5)",
+      color: "rgb(0, 0, 0",
     },
   };
 
@@ -66,7 +66,7 @@ function ChapterOneP() {
     marker: {
       size: 4,
       line: {
-        color: "rgba(200, 20, 20, 0.5",
+        color: "rgb(200, 20, 20)",
         width: 0.5,
       },
       opacity: 0.8,
@@ -90,7 +90,7 @@ function ChapterOneP() {
     name: "sides",
     line: {
       size: 4,
-      color: "rgba(0, 0, 0, 0.5)",
+      color: "rgb(0, 0, 0)",
     },
   };
 
@@ -104,7 +104,7 @@ function ChapterOneP() {
     marker: {
       size: 4,
       line: {
-        color: "rgba(200, 20, 20, 0.5)",
+        color: "rgb(200, 20, 20)",
         width: 0.5,
       },
       opactiy: 0.8,
@@ -112,16 +112,44 @@ function ChapterOneP() {
   };
   const traceBCCLines = {
     type: "scatter3d",
-    x: [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1],
-    y: [0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1],
-    z: [0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0],
+    x: [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1],
+    y: [0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0],
+    z: [0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0]  ,
     mode: "lines",
     name: "sides",
     line: {
       size: 2,
-      color: "rgba(0, 0, 0, 0.5)",
+      color: "rgb(0, 0, 0)",
     },
   };
+  const traceDiamondPoints = {
+    type: "scatter3d",
+    x: [0, 0.25, 0.5, .75, 0.5, 0.5, 0.75, 0.5, 0, 0.25, 1, 0, 0, 0, 1, 1, 1, 1],
+    y: [0, 0.25, 0.5, .75, 0.5, 0, 0.25, 1, 0.5, 0.75, 0.5, 0, 1, 1, 1, 0, 0, 1],
+    z: [0, 0.25, 0, .25, 1, 0.5, 0.75, 0.5, 0.5, 0.75, 0.5, 1, 1, 0, 0, 1, 0, 1],
+    mode: "markers",
+    name: "joints",
+    marker: {
+      size: 4,
+      line: {
+        color: "rgb(200, 20, 20)",
+        width: 0.5,
+      },
+      opacity: 0.8,
+    },
+  }
+  const traceDiamondLines = {
+    type: "scatter3d",
+    x: [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0.25, 0.5, 0.75, 1, 0, 0, 0.25, 0.5, 0.75, 1, 0.75, 0.5, 0.25, 0, 0.25, 0.5, 0.75, 1 ],
+    y: [0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0.25, 0.5, 0.75, 1, 1, 1, 0.75, 1, 0.75, 0.5, 0.25, 0, 0.25, 0.5, 0.75, 0.5, 0.25, 0 ],
+    z: [0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0.25, 0, 0.25, 0, 0, 1, 0.75, 0.5, 0.25, 0.5, 0.75, 0.5, 0.25, 0.5, 0.75, 1, 0.75, 1],
+    mode: "lines",
+    name: "sides",
+    line: {
+      size: 4,
+      color: "rgb(0, 0, 0",
+    }
+  }
 
   var layout = {
     title: title,
@@ -147,7 +175,11 @@ function ChapterOneP() {
       setData([traceBCCPoints, traceBCCLines]);
       setTitle("Body Centered Cubic");
       setStruct(value);
-    } else {
+    } else if(value === "Diamond") {
+      setData([traceDiamondPoints, traceDiamondLines]);
+      setTitle("Diamond Structure");
+      setStruct(value);
+    }else {
       setStruct(value);
       setData([]);
     }

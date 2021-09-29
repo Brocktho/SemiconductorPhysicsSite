@@ -1,7 +1,7 @@
 import React from "react";
 import NavTab from "./NavTab";
 
-function NavBar({ chapters = [] }) {
+function NavBar({ chapters = [], close }) {
   const Tabs =
     chapters.length > 0 &&
     chapters.map((item, i) => {
@@ -13,6 +13,7 @@ function NavBar({ chapters = [] }) {
           toggle={item.toggle}
           set={item.set}
           pages={item.options}
+          close={close}
         />
       );
     });
