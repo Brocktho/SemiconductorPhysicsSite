@@ -6,7 +6,7 @@ import ChapterThree from "./Components/ChapterThree";
 import ChapterZero from "./Components/ChapterZero";
 import NavBar from "./Components/NavBar";
 import ErrorPage from "./Components/ErrorPage";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const [loadedData, setLoadedData] = useState([]);
