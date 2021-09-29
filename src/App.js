@@ -72,11 +72,15 @@ function App() {
   return (
     <Router>
       {siteLoading && 
-      <div className="main">
-        <h1 className="text-4xl dark:text-white">
-          PLEASE WAIT, SITE LOADING!
-        </h1>
-      </div>
+      <Switch>
+        <Route path="/*">
+          <div className="main">
+            <h1 className="text-4xl dark:text-white">
+              PLEASE WAIT, SITE LOADING!
+            </h1>
+          </div>
+        </Route>
+      </Switch>
       }
       {!siteLoading && (
         <div
