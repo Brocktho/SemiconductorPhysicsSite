@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function SelectMenu({
-  items,
-  desired,
-  update,
-  selectTitle,
+  items = [],
+  desired = "",
+  update = () => {},
+  selectTitle = "Please Select",
   bgcolor = "bg-blue-500 dark:bg-blue-900",
   textcolor = "text-white dark:text-gray-200",
 }) {

@@ -4,6 +4,7 @@ import ChapterOneP from "./Components/ChapterOneP";
 import ChapterTwo from "./Components/ChapterTwo";
 import ChapterThree from "./Components/ChapterThree";
 import ChapterZero from "./Components/ChapterZero";
+import ChapterFour from "./Components/ChapterFour";
 import NavBar from "./Components/NavBar";
 import ErrorPage from "./Components/ErrorPage";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
@@ -44,6 +45,11 @@ function App() {
     { key: "3.1", path: "Chapter3_1", name: "3.1 Energy Bands" },
   ];
 
+  const [Chapter4, setChapter4] = useState(false);
+  const chapter4Options = [
+    {key:"4.1", path:"Chapter4_1", name: "4.1 Charge Carriers in Semiconductors"}
+  ]
+
   const chapters = [
     {
       name: "Chapter1",
@@ -63,6 +69,12 @@ function App() {
       set: setChapter3,
       options: chapter3Options,
     },
+    {
+      name: "Chapter4",
+      toggle: Chapter4,
+      set: setChapter4,
+      options: chapter4Options
+    }
   ];
 
   function close() {
@@ -98,6 +110,9 @@ function App() {
             </Route>
             <Route path="/Chapter3">
               <ChapterThree />
+            </Route>
+            <Route path="/Chapter4">
+              <ChapterFour/>
             </Route>
             <Route
               exact
