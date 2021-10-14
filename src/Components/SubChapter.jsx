@@ -1,15 +1,15 @@
 import React from "react";
 
 
-function SubChapter({data={"title": null, "noteData": [], "picData": []}}) {
-  const SubNotes = data.noteData.length > 0 &&
-    data.noteData.map((item, i) => {
+function SubChapter({title=undefined, noteData=[], picData=[]}) {
+  const SubNotes = noteData > 0 &&
+    noteData.map((item, i) => {
       return (
         <li>{item}</li>
         );
     }); 
-    const Images = data.picData.length > 0 &&
-    data.picData.map((item,i) => {
+    const Images = picData.length > 0 &&
+    picData.map((item,i) => {
         return(
             <img alt={item}/>
         );
@@ -17,7 +17,7 @@ function SubChapter({data={"title": null, "noteData": [], "picData": []}}) {
 
   return (
     <div className="ChapterArea">
-      <h1 className="ChapterTitle">{data.name}</h1>
+      <h1 className="ChapterTitle">{title}</h1>
       <div className="flex flex-row justify-around items-center w-full h-full overflow-auto">
         <ul className="ChapterNotes">
           <li className="list-none text-center pb-6">Overview:</li>

@@ -5,7 +5,7 @@ function SelectMenu({
   items = [],
   desired = "",
   update = () => {},
-  selectTitle = "Please Select",
+  title = "Please Select",
   bgcolor = "bg-blue-500 dark:bg-blue-900",
   textcolor = "text-white dark:text-gray-200",
 }) {
@@ -22,7 +22,7 @@ function SelectMenu({
   return (
     <div className="flex flex-col w-full h-16 items-center justify-center">
       <label className="flex font-bold text-lg text-center pt-2 text-white dark:text-gray-100">
-        {selectTitle}
+        {title}
       </label>
       <select
         value={desired}
@@ -34,8 +34,7 @@ function SelectMenu({
         onChange={(e) => update(e.target.value)}
       >
         <option value="" className="hidden" disabled>
-          {" "}
-          --select an option--{" "}
+          {" "}--select an option--{" "}
         </option>
         {options}
       </select>
@@ -47,7 +46,7 @@ SelectMenu.propTypes = {
   items: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
   desired: PropTypes.string.isRequired,
   update: PropTypes.func.isRequired,
-  selectTitle: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   bgcolor: PropTypes.string,
   textcolor: PropTypes.string,
 };
