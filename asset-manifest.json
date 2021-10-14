@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/SemiconductorPhysicsSite/static/css/main.ad8c2818.chunk.css",
-    "main.js": "/SemiconductorPhysicsSite/static/js/main.9ba5bdd9.chunk.js",
-    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.9ba5bdd9.chunk.js.map",
+    "main.css": "/SemiconductorPhysicsSite/static/css/main.3833ca88.chunk.css",
+    "main.js": "/SemiconductorPhysicsSite/static/js/main.a7f23339.chunk.js",
+    "main.js.map": "/SemiconductorPhysicsSite/static/js/main.a7f23339.chunk.js.map",
     "runtime-main.js": "/SemiconductorPhysicsSite/static/js/runtime-main.c41988d1.js",
     "runtime-main.js.map": "/SemiconductorPhysicsSite/static/js/runtime-main.c41988d1.js.map",
-    "static/js/2.3be09de3.chunk.js": "/SemiconductorPhysicsSite/static/js/2.3be09de3.chunk.js",
-    "static/js/2.3be09de3.chunk.js.map": "/SemiconductorPhysicsSite/static/js/2.3be09de3.chunk.js.map",
+    "static/js/2.a05d7a78.chunk.js": "/SemiconductorPhysicsSite/static/js/2.a05d7a78.chunk.js",
+    "static/js/2.a05d7a78.chunk.js.map": "/SemiconductorPhysicsSite/static/js/2.a05d7a78.chunk.js.map",
     "static/js/3.99ea7b65.chunk.js": "/SemiconductorPhysicsSite/static/js/3.99ea7b65.chunk.js",
     "static/js/3.99ea7b65.chunk.js.map": "/SemiconductorPhysicsSite/static/js/3.99ea7b65.chunk.js.map",
     "index.html": "/SemiconductorPhysicsSite/index.html",
-    "static/css/main.ad8c2818.chunk.css.map": "/SemiconductorPhysicsSite/static/css/main.ad8c2818.chunk.css.map",
-    "static/js/2.3be09de3.chunk.js.LICENSE.txt": "/SemiconductorPhysicsSite/static/js/2.3be09de3.chunk.js.LICENSE.txt",
+    "static/css/main.3833ca88.chunk.css.map": "/SemiconductorPhysicsSite/static/css/main.3833ca88.chunk.css.map",
+    "static/js/2.a05d7a78.chunk.js.LICENSE.txt": "/SemiconductorPhysicsSite/static/js/2.a05d7a78.chunk.js.LICENSE.txt",
     "static/media/NeamanConstants1.2618fdd9.png": "/SemiconductorPhysicsSite/static/media/NeamanConstants1.2618fdd9.png",
     "static/media/NeamanConstants2.1c44c6ef.png": "/SemiconductorPhysicsSite/static/media/NeamanConstants2.1c44c6ef.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c41988d1.js",
-    "static/js/2.3be09de3.chunk.js",
-    "static/css/main.ad8c2818.chunk.css",
-    "static/js/main.9ba5bdd9.chunk.js"
+    "static/js/2.a05d7a78.chunk.js",
+    "static/css/main.3833ca88.chunk.css",
+    "static/js/main.a7f23339.chunk.js"
   ]
 }
